@@ -11,7 +11,7 @@ jobs:
     name: "Build Jar"
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download Jar
         uses: actions/download-artifact@v2
         with:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download Jar
         uses: actions/download-artifact@v2
         with:
@@ -74,7 +74,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download Jar
         uses: actions/download-artifact@v2
         with:
@@ -96,7 +96,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download Jar
         uses: actions/download-artifact@v2
         with:
@@ -118,7 +118,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Grab Version
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
