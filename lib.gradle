@@ -1,6 +1,6 @@
 ext {
     lib = [
-            spring_bom: "org.springframework.boot:spring-boot-dependencies:2.4.2",
+            spring_bom: "org.springframework.boot:spring-boot-dependencies:2.7.17",
             lombok    : 'org.projectlombok:lombok:1.18.30',
             mustache  : 'com.samskivert:jmustache:1.15',
             spring_el : 'org.springframework:spring-expression',
